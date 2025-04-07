@@ -210,7 +210,7 @@ style=apa,
 \newpage
 \section{Extra for Experts}
 
-    You can also create graphs in \LaTeX. This is a fairly complex example, so don't worry if you don't understand what is happening in the code.
+    You can also create graphs in \LaTeX. This is a fairly complex example of a graph from \textcite{trudgill_sex_1972}, so don't worry if you don't understand what is happening in the code.
 
     \vspace{12pt}
     \begin{figure}[ht]
@@ -246,6 +246,8 @@ style=apa,
             \end{axis}
         \end{tikzpicture}
     \end{figure}
+
+    You can check out the code on the next page:
 
     \newpage
     \begin{verbatim}
@@ -287,24 +289,51 @@ style=apa,
     \end{figure}
     \end{document}
     \end{verbatim}
+
+    And here's another example on how to produce a vowel space Typical vowel space of New Zealand English Speaker adapted from \textcite{gordon_new_2008} using the \texttt{vowel} and \texttt{tipa} packages.
     
     \begin{figure}[ht]
         \Large
         \centering
-        \caption{Typical vowel space of New Zealand English Speaker}
+        \caption{Typical vowel space of New Zealand English Speaker.}
+        \vspace{6pt}
         \begin{vowel}[ipanew]
-            \putcvowel{\small TRAP}{3}
-            \putcvowel{\small START}{4}
-            \putcvowel{\small DRESS}{2}
-            \putcvowel{\small STRUT}{15}
-            \putcvowel{\small KIT}{10}
-            \putcvowel{\small FOOT}{14}
+            \putcvowel{\ae}{3}
+            \putcvowel{a\textlengthmark}{4}
+            \putcvowel{e}{2}
+            \putcvowel{\textturna}{15}
+            \putcvowel{\textschwa}{10}
+            \putcvowel{\textbaru\textlengthmark}{14}
         \end{vowel}
     \end{figure}
 
+    You can check out the code below:
+    
+    \begin{verbatim}
+    \documentclass{article}
+    \begin{document}
+    \begin{figure}[ht]
+        \usepackage{vowel}
+        \usepackage{tipa}
+        \Large
+        \centering
+        \caption{Typical vowel space of New Zealand English Speaker.}
+        \vspace{6pt}
+        \begin{vowel}[ipanew]
+            \putcvowel{\ae}{3}
+            \putcvowel{a\textlengthmark}{4}
+            \putcvowel{e}{2}
+            \putcvowel{\textturna}{15}
+            \putcvowel{\textschwa}{10}
+            \putcvowel{\textbaru\textlengthmark}{14}
+        \end{vowel}
+    \end{figure}
+    \end{document}
+    \end{verbatim}
+
 \section{Summary}
 
-    Once you familiarise yourself with the Overleaf environment, 
+    This is just a quick overview of \LaTeX\space environment in Overleaf. Once you get started, you're on your way to being a typesetting genius. If you have any questions, please feel free to get in touch at: \href{sidney.wong@pg.canterbury.ac.nz}{sidney.wong@pg.canterbury.ac.nz}.
 
 \printbibliography
 
