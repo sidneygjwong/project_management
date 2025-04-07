@@ -10,5 +10,4 @@ https://colab.research.google.com/drive/1-_u_j6QG5MJWift8PrOMIbJXAlIQgmQJ?usp=sh
 
 This workshop was organised by Britni Moore, Chae Eun Lee, Amy Atiles, and Sidney Wong for the Project Management Workshop for the graduate school in linguistics at the University of Illinois Urbana-Champaign.
 
-By: Sidney Wong, April 2025
-_Last Updated 7, April 2025_
+By: Sidney Wong, _Last Updated 7, April 2025_
